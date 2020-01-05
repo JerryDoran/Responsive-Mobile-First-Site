@@ -57,7 +57,7 @@ a {
   font-size: 5.5rem;
   line-height: 1;
   font-weight: 100;
-  margin-bottom: 6px;
+  margin-bottom: 25px;
 }
 
 .custom-font-secondary {
@@ -275,12 +275,12 @@ header {
 /* ABOUT SECTION */
 .about {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
+  margin-bottom: 5rem;
 }
+
 .about-content {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .about-description {
@@ -293,41 +293,59 @@ header {
   margin-top: 5px;
 }
 
-/* PORTFOLIO SECTION */
-.store {
+.about-store {
+  width: 100%;
+  min-height: 30rem;
+  background: url('/images/motivation.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.skills {
+  margin-top: 5rem;
+}
+
+.skills-store {
   width: 100%;
   min-height: 30rem;
   background: url('/images/store.jpeg') center no-repeat;
   background-size: cover;
 }
 
-/* SECTION - FRESH INGREDIENTS */
-.fresh-ingredients {
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/between.jpeg') center no-repeat;
-  background-size: cover;
-}
-
-/* SECTION - OUR MENU */
-.image-group {
+.my-skills {
+  margin-top: 8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.skill h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 3rem -2px 2rem 0;
 }
 
-.image-group img {
-  width: 100%;
-  height: 30rem;
+.icon-container {
+  width: 6rem;
+  height: 6rem;
+  border: 3px solid lightblue;
+  background-color: #38a1f3;
+  display: flex;
+  transform: rotate(45deg);
+}
+.icon-container i {
+  font-size: 3rem;
+  margin: auto;
+  transform: rotate(-45deg);
 }
 
-/* SECTION - CITRUS GOODNESS */
-.citrus-goodness {
-  width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/between2.jpeg') center no-repeat;
-  background-size: cover;
-}
+/* PORTFOLIO SECTION */
 
 /* SECTION - CONTACT US */
 .contact-us form {
@@ -514,17 +532,17 @@ footer h4 {
     padding-right: 10rem;
   }
 
-  .first {
+  /* .first {
     order: 1;
-  }
+  } */
 
   .second {
     order: 2;
   }
 
-  .store {
+  /* .store {
     min-height: 40rem;
-  }
+  } */
 
   .btn-info {
     font-size: 1.8rem;
