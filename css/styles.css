@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Niconne|Roboto:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis:200,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
 /* GLOBAL STYLES */
 *,
 *::before,
@@ -16,6 +16,10 @@ html {
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 section {
@@ -40,7 +44,7 @@ a {
   --main-font-dark-gray: #4d4d4d;
   --main-footer-bg-color: #141414;
   --main-font-family: 'Roboto';
-  --signature-font-family: cursive;
+  --signature-font-family: Kaushan Script;
 }
 
 /* REUSABLE CLASSES */
@@ -463,8 +467,7 @@ footer h4 {
   }
 
   .main-text h1 {
-    /* font-family: var(--signature-font-family); */
-    font-family: cursive;
+    font-family: var(--signature-font-family);
     font-size: 10rem;
     font-weight: 100;
     margin-bottom: 5rem;
