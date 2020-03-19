@@ -211,7 +211,6 @@ header {
   color: #888;
 }
 
-
 /* HEADER - MAIN TEXT */
 .main-text {
   line-height: 0;
@@ -339,7 +338,7 @@ header {
 
 /* TECHNOLOGIES */
 .tech-container {
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   position: relative;
   /* background-color: blue; */
   display: flex;
@@ -429,7 +428,104 @@ header {
   transform: perspective(600px) rotateY(0deg);
 }
 
+.quality {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/macbook.jpg') center no-repeat;
+  background-size: cover;
+  margin-top: 5rem;
+}
+
 /* PORTFOLIO SECTION */
+.card-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: 300px;
+  height: 500px;
+  grid-template-rows: 210px 210px 100px;
+  grid-template-areas:
+    'image'
+    'text'
+    'links';
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  transition: all 500ms ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.card-image {
+  grid-area: image;
+  background: url('/images/hero.jpg') center/cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+  
+}
+
+.card-text h2 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 14px;
+  text-align: left;
+}
+
+.card-links {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-links a {
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  background-color: var(--main-font-dark-gray);
+  color: #fff;
+  width: 120px;
+  transition: background 500ms;
+}
+
+.btn:hover {
+  background: var(--main-font-color);
+  color: #fff;
+}
+
+.btn i {
+  font-size: 18px;
+  margin-right: 10px;
+}
 
 /* FOOTER */
 
