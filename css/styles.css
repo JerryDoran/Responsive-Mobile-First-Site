@@ -454,6 +454,7 @@ header {
   background-color: var(--main-white);
   height: 500px;
   transition: transform 500ms ease;
+  border-radius: 10px;
 }
 
 .port:hover {
@@ -555,7 +556,7 @@ input::placeholder,
   background-color: var(--main-font-color);
   color: var(--main-white);
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 25rem;
   cursor: pointer;
 }
 
