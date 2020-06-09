@@ -358,7 +358,7 @@ header {
 }
 
 .front-end-card img {
-  max-width: 300px;
+  max-width: 150px;
 }
 
 /* 
@@ -781,6 +781,14 @@ footer h4 {
 
   .tech-container {
     flex-direction: row;
+  }
+
+  .front-end-card img {
+    max-width: 200px;
+  }
+
+  .front-end-card p {
+    margin-top: 20px;
   }
 
   @keyframes fadeIn {
