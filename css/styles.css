@@ -196,6 +196,14 @@ header {
   margin-top: 10px;
 }
 
+.nav-link {
+  opacity: .8;
+}
+
+.brand img {
+  opacity: .8;
+}
+
 .nav .overlay ul {
   position: relative;
   height: 100%;
