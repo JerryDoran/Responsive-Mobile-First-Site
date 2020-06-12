@@ -338,7 +338,7 @@ header {
 
 /* TECHNOLOGIES */
 .tech-container {
-  margin: .5rem auto;
+  margin: 0.5rem auto;
   position: relative;
   /* background-color: blue; */
   display: flex;
@@ -428,7 +428,100 @@ header {
   transform: perspective(600px) rotateY(0deg);
 }
 
+.quality {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/images/macbook.jpg') center no-repeat;
+  background-size: cover;
+  margin-top: 5rem;
+}
+
 /* PORTFOLIO SECTION */
+.card-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.port {
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 20px 0 0;
+  margin: 20px;
+  background-color: var(--main-white);
+  height: 500px;
+  transition: transform 500ms ease;
+  border-radius: 10px;
+}
+
+.port:hover {
+  transform: scale(1.1);
+}
+
+.project-mgr {
+  width: 275px;
+  height: 150px;
+}
+
+.mybrary {
+  width: 275px;
+  height: 150px;
+}
+
+.card-text {
+  margin: 10px;
+  max-width: 250px;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.card-text h2 {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.card-links {
+  margin: 20px 0 0 0;
+  padding: 2px 0;
+}
+
+.card-links a {
+  font-size: 12px;
+  margin: 10px auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  background-color: var(--main-font-dark-gray);
+  color: #fff;
+  width: 120px;
+  transition: background 500ms;
+}
+
+.btn:hover {
+  background: var(--main-font-color);
+  color: #fff;
+}
+
+.btn i {
+  font-size: 18px;
+  margin-right: 10px;
+}
 
 /* FOOTER */
 
@@ -463,7 +556,7 @@ input::placeholder,
   background-color: var(--main-font-color);
   color: var(--main-white);
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 25rem;
   cursor: pointer;
 }
 
