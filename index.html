@@ -20,7 +20,9 @@
       </div>
 
       <nav class="nav">
-        <!-- <a href="index.html" class="logo">The Squeeze</a> -->
+        <div class="brand">
+          <img src="images/mylogowhite.png" width="200" alt="" />
+        </div>
         <div class="overlay">
           <ul>
             <li class="nav-link"><a href="#home">Home</a></li>
@@ -131,7 +133,55 @@
       </div>
       <!-- FRONT END -->
       <div class="tech-container">
-        <div class="card">
+        <div class="front-end-card">
+          <img src="images/html.png" alt="" />
+          <p>
+            Elegant form creation, rich user interface enhancements and better
+            consistency provide cleaner and neater code in my markup.
+          </p>
+        </div>
+        <div class="front-end-card">
+          <img src="images/css.png" alt="" />
+          <p>
+            I am able to make global changes to update many elements all at once
+            utilizing CSS variables. Helps me to provide better compatibility
+            with future browsers.
+          </p>
+        </div>
+        <div class="front-end-card">
+          <img src="images/js.png" alt="" />
+          <p>
+            Allows me to create rich interactive interfaces such as drag and
+            drop areas and custom components that enhance a user's overall
+            experience.
+          </p>
+        </div>
+        <div class="back-end-card">
+          <img src="images/mongo.png" alt="" />
+          <p>
+            I am able to create flexible and scalable applications with rich
+            querying capabilities which gives my applications speed and
+            performance.
+          </p>
+        </div>
+        <div class="back-end-card">
+          <img src="images/node.png" alt="" />
+          <p>
+            I complete my stack with the speed and flexibility that Node.js
+            provides. The use of Express.js and other libraries allows for
+            highly extensible and performant applications.
+          </p>
+        </div>
+        <div class="back-end-card">
+          <img src="images/mysql.png" alt="" />
+          <p>
+            I also have the skills and knowledge of providing relational
+            database support when needed or desired such as using MySQL or SQL
+            Server databases.
+          </p>
+        </div>
+
+        <!-- <div class="card">
           <div class="front">
             <i class="fab fa-chrome"></i>
             <h1>Front End</h1>
@@ -149,7 +199,7 @@
             </div>
           </div>
         </div>
-        <!-- BACK END -->
+        
         <div class="card">
           <div class="front">
             <i class="fas fa-database"></i>
@@ -167,7 +217,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -246,6 +296,61 @@
           </div>
         </div>
         <div class="port">
+          <img class="comfy-corner" src="images/comfy-house.png" />
+          <div class="card-text">
+            <h2>Comfy Corner</h2>
+            <p>
+              The application was created using HTML, CSS and Javascript. This
+              site showcases the use of CSS Flex box and Grid technologies as
+              well as a simulated shopping cart that keeps track of user
+              selections.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://disneyfan9184.github.io/comfy-corner/"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fas fa-eye"></i>Project
+              </a>
+              <a
+                href="https://github.com/disneyfan9184/comfy-corner"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="port">
+          <img class="comfy-corner" src="images/event-planner.png" />
+          <div class="card-text">
+            <h2>Event Planner</h2>
+            <p>
+              Plan and organize events using this Vue.js application with
+              Firebase technologies such as Firestore and Hosting. The site uses
+              Vuetify showcasing Google's material component design.
+            </p>
+            <div class="card-links">
+              <a
+                href="https://event-planner-bc9c2.firebaseapp.com/"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fas fa-eye"></i>Project
+              </a>
+              <a
+                href="https://github.com/disneyfan9184/vue_event_planner"
+                target="_blank"
+                class="btn"
+              >
+                <i class="fab fa-github"></i>Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="port">
           <div class="card-text">
             <h2>Project Name</h2>
             <p>
@@ -272,35 +377,7 @@
               <a href="" class="btn"> <i class="fab fa-github"></i>Github </a>
             </div>
           </div>
-        </div>
-        <div class="port">
-          <div class="card-text">
-            <h2>Project Name</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              eligendi culpa, libero explicabo nesciunt officiis blanditiis
-              consectetur lit iste.
-            </p>
-            <div class="card-links">
-              <a href="" class="btn"> <i class="fas fa-eye"></i>Project </a>
-              <a href="" class="btn"> <i class="fab fa-github"></i>Github </a>
-            </div>
-          </div>
-        </div>
-        <div class="port">
-          <div class="card-text">
-            <h2>Project Name</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              eligendi culpa, libero explicabo nesciunt officiis blanditiis
-              consectetur lit iste.
-            </p>
-            <div class="card-links">
-              <a href="" class="btn"> <i class="fas fa-eye"></i>Project </a>
-              <a href="" class="btn"> <i class="fab fa-github"></i>Github </a>
-            </div>
-          </div>
-        </div>
+        </div> -->
       </div>
     </section>
     <!---------------------------------- CONTACT SECTION ------------------------------------>
@@ -309,9 +386,16 @@
         <div class="center add-padding-right">
           <h1 class="custom-font">Contact</h1>
           <h2 class="custom-font-secondary">Me</h2>
+          <h5 class="email">jmdwebtechnologies@gmail.com</h5>
         </div>
-        <div class="form-container add-flex">
-          <form action="">
+        <!-- <div class="form-container add-flex">
+          <form
+            action="mailto:jerry-doran@hotmail.com"
+            enctype="text/plain"
+            method="POST"
+            name="contact"
+            data-netlify="true"
+          >
             <input
               type="text"
               class="input"
@@ -332,10 +416,14 @@
               placeholder="What can I help you with?"
             ></textarea>
           </form>
-          <input type="submit" class="input btn btn-submit" />
-        </div>
+          <input type="submit" class="btn-submit" />
+        </div> -->
       </div>
-      <p class="copy-right">JMD WebTechnologies Copyright &copy; 2020</p>
+      <p class="copy-right">Doran Software Copyright &copy; 2020</p>
+      <p class="logo-maker">
+        Created my free logo at
+        <a href="https://www.logomakr.com" target="_blank">LogoMkr.com</a>
+      </p>
     </footer>
     <!-- <footer>
       <div class="locations">
