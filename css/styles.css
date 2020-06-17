@@ -654,7 +654,7 @@ footer h4 {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 900px) {
   header,
   .between-sec {
     /* Will give a parallax effect */
