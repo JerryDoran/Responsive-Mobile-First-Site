@@ -197,11 +197,11 @@ header {
 }
 
 .nav-link {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .brand img {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .nav .overlay ul {
@@ -228,31 +228,58 @@ header {
 
 /* HEADER - MAIN TEXT */
 .main-text {
-  line-height: 0;
+  /* line-height: 0; */
+  display: none;
   margin: auto;
   color: var(--main-white);
   user-select: none;
 }
 
-.main-text h1 {
-  font-family: var(--signature-font-family);
+.mobile-text {
+  margin: auto;
+  color: var(--main-white);
+  user-select: none;
+}
+
+.accent {
   color: var(--main-font-color);
-  font-size: 7rem;
-  font-weight: 100;
+}
+
+.mobile-text h1 {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.mobile-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* margin-right: -5px; */
+  margin-top: 60px;
+  font-size: 3rem;
+  line-height: 1.5;
+  position: relative;
+}
+
+.main-text h1 {
+  /* font-family: var(--signature-font-family); */
+  /* color: var(--main-font-color); */
+  font-size: 4rem;
+  font-weight: 600;
   margin-bottom: 3rem;
 }
 
 .main-text h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-right: -5px;
+  /* margin-right: -5px; */
   margin-top: 60px;
   font-size: 2rem;
   line-height: 1.5;
   position: relative;
 }
 
-.main-text h2::before,
+/* .main-text h2::before,
 .main-text h2::after {
   content: '';
   width: 7rem;
@@ -262,7 +289,7 @@ header {
   position: absolute;
   background: var(--main-white);
   border-radius: 8px;
-}
+} */
 
 .main-text h2::before {
   left: -3rem;
@@ -713,7 +740,7 @@ footer h4 {
     position: absolute;
     left: 0;
     bottom: -3px;
-    background-color: var(--main-white);
+    background-color: var(--main-font-color);
     width: 100%;
     height: 2px;
     transform: scaleX(0);
@@ -725,10 +752,18 @@ footer h4 {
     transform: scaleX(1);
   }
 
+  .main-text {
+    display: block;
+  }
+
+  .mobile-text {
+    display: none;
+  }
+
   .main-text h1 {
-    font-family: var(--signature-font-family);
-    font-size: 10rem;
-    font-weight: 100;
+    /* font-family: var(--signature-font-family); */
+    font-size: 7rem;
+    font-weight: 600;
     margin-bottom: 5rem;
   }
 
@@ -742,7 +777,7 @@ footer h4 {
     position: relative;
   }
 
-  .main-text h2::before,
+  /* .main-text h2::before,
   .main-text h2::after {
     content: '';
     width: 7rem;
@@ -759,7 +794,7 @@ footer h4 {
   }
   .main-text h2::after {
     right: -3rem;
-  }
+  } */
 
   .container {
     display: flex;
