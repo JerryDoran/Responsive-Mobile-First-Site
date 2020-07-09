@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis:200,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
 /* GLOBAL STYLES */
 *,
 *::before,
@@ -320,6 +321,10 @@ header {
 
 /* ABOUT SECTION */
 
+.about-me {
+  display: flex;
+  flex-direction: column;
+}
 .about-store {
   width: 100%;
   min-height: 40rem;
@@ -837,9 +842,13 @@ footer h4 {
   }
 
   .about {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    height: 55vh;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    /* height: 55vh; */
+  }
+
+  .about-me {
+    flex-direction: row;
   }
 
   .skills {
